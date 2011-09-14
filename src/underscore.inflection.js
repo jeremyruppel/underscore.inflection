@@ -11,8 +11,6 @@
    */
   var inflector = {
     
-    VERSION : '1.0.0',
-
     plurals : [ ],
 
     singulars : [ ],
