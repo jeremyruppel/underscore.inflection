@@ -1,9 +1,17 @@
+//  Underscore.inflection.js
+//  (c) 2011 Jeremy Ruppel
+//  Underscore.inflection is freely distributable under the MIT license.
+//  Portions of Underscore.inflection are inspired or borrowed from ActiveSupport
+//  Version 1.0.0
+
 ( function( _, undefined )
 {
   /**
    * Inflector
    */
   var inflector = {
+    
+    VERSION : '1.0.0',
 
     plurals : [ ],
 
