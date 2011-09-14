@@ -65,6 +65,37 @@ describe( 'underscore.inflector', function( )
     {
       expect( _.pluralize( 'posts' ) ).toEqual( 'posts' );
     } );
+    
+    describe( 'with a number', function( )
+    {
+      it( 'should pluralize the word if not 1', function( )
+      {
+        expect( _.pluralize( 'post', 0 ) ).toEqual( 'posts' );
+      } );
+      
+      it( 'should pluralize the word if 1', function( )
+      {
+        expect( _.pluralize( 'post', 1 ) ).toEqual( 'post' );
+      } );
+      
+      it( 'should singularize the word if 1', function( )
+      {
+        expect( _.pluralize( 'posts', 1 ) ).toEqual( 'post' );
+      } );
+      
+      describe( 'and true', function( )
+      {
+        it( 'should include the word with the plural', function( )
+        {
+          expect( _.pluralize( 'post', 0, true ) ).toEqual( '0 posts' );
+        } );
+        
+        it( 'should include the word with the singular', function( )
+        {
+          expect( _.pluralize( 'post', 1, true ) ).toEqual( '1 post' );
+        } );
+      } );
+    } );
   } );
   
   describe( 'plural', function( )

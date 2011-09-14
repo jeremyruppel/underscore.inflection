@@ -31,23 +31,33 @@
       this.plurals.unshift( [ rule, replacement ] );
     },
 
-    pluralize : function( word )
+    pluralize : function( word, count, includeNumber )
     {
-      if( _( this.uncountables ).include( word ) )
+      var result;
+      
+      if( count !== undefined )
       {
-        return word;
+        result = ( count === 1 ) ? this.singularize( word ) : this.pluralize( word );
+        result = ( includeNumber ) ? [ count, result ].join( ' ' ) : result;
       }
-
-      var result = word;
-
-      _( this.plurals ).detect( function( rule )
+      else
       {
-        var gsub = this.gsub( word, rule[ 0 ], rule[ 1 ] );
+        if( _( this.uncountables ).include( word ) )
+        {
+          return word;
+        }
 
-        return gsub ? ( result = gsub ) : false;
-      },
-      this );
+        result = word;
 
+        _( this.plurals ).detect( function( rule )
+        {
+          var gsub = this.gsub( word, rule[ 0 ], rule[ 1 ] );
+
+          return gsub ? ( result = gsub ) : false;
+        },
+        this );
+      }
+      
       return result;
     },
 
