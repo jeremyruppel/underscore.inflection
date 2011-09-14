@@ -73,7 +73,12 @@ describe( 'underscore.inflector', function( )
         expect( _.pluralize( 'post', 0 ) ).toEqual( 'posts' );
       } );
       
-      it( 'should pluralize the word if 1', function( )
+      it( 'should pluralize the word if non-1 float', function( )
+      {
+        expect( _.pluralize( 'post', 1.5 ) ).toEqual( 'posts' );
+      } );
+      
+      it( 'should not pluralize the word if 1', function( )
       {
         expect( _.pluralize( 'post', 1 ) ).toEqual( 'post' );
       } );

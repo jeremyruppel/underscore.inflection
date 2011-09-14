@@ -16,13 +16,24 @@ The methods listed below are the ones you'll be using 99% of the time.
 
 **Signature:** `_.pluralize( word )`
 
-`pluralize` pluralizes the string passed to it. Dassit dassall.
+`pluralize` pluralizes the string passed to it.
 
 	// functional style
 	_.pluralize( 'word' ); // => 'words'
 	
 	// object-oriented style
 	_( 'word' ).pluralize( ); // => 'words'
+
+It also can accept a number as the second parameter. If a number is provided, it will pluralize the word to match the number.
+
+	_( 'word' ).pluralize( 0 ); // => 'words'
+	_( 'word' ).pluralize( 1 ); // => 'word'
+	_( 'word' ).pluralize( 1.5 ); // => 'words'
+	
+Optionally, you can pass `true` as a third parameter. If found, this will include the count with the output.
+
+	_( 'word' ).pluralize( 0, true ); // => '0 words'
+	_( 'word' ).pluralize( 1, true ); // => '1 word'
 
 ### singularize
 
