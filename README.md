@@ -134,7 +134,9 @@ Thanks to...
 ------------
 
 The [Rails][rails] team for [ActiveSupport][activesupport]
+
 The [DocumentCloud][documentcloud] team for [underscore.js][underscore]
+
 These other Inflector implementations:
 
 - [active-support-for-javascript](http://code.google.com/p/active-support-for-javascript/)
