@@ -6,16 +6,17 @@
 
 ( function( _, undefined )
 {
+  var
+    plurals = [ ],
+
+    singulars = [ ],
+
+    uncountables = [ ];
+
   /**
    * Inflector
    */
   var inflector = {
-    
-    plurals : [ ],
-
-    singulars : [ ],
-
-    uncountables : [ ],
 
     gsub : function( word, rule, replacement )
     {
@@ -26,7 +27,7 @@
 
     plural : function( rule, replacement )
     {
-      this.plurals.unshift( [ rule, replacement ] );
+      plurals.unshift( [ rule, replacement ] );
     },
 
     pluralize : function( word, count, includeNumber )
@@ -40,14 +41,14 @@
       }
       else
       {
-        if( _( this.uncountables ).include( word ) )
+        if( _( uncountables ).include( word ) )
         {
           return word;
         }
 
         result = word;
 
-        _( this.plurals ).detect( function( rule )
+        _( plurals ).detect( function( rule )
         {
           var gsub = this.gsub( word, rule[ 0 ], rule[ 1 ] );
 
@@ -61,19 +62,19 @@
 
     singular : function( rule, replacement )
     {
-      this.singulars.unshift( [ rule, replacement ] );
+      singulars.unshift( [ rule, replacement ] );
     },
 
     singularize : function( word )
     {
-      if( _( this.uncountables ).include( word ) )
+      if( _( uncountables ).include( word ) )
       {
         return word;
       }
 
       var result = word;
 
-      _( this.singulars ).detect( function( rule )
+      _( singulars ).detect( function( rule )
       {
         var gsub = this.gsub( word, rule[ 0 ], rule[ 1 ] );
 
@@ -86,20 +87,20 @@
 
     irregular : function( singular, plural )
     {
-      this.plural( singular, plural );
-      this.singular( plural, singular );
+      this.plural( '\\b' + singular + '\\b', plural );
+      this.singular( '\\b' + plural + '\\b', singular );
     },
 
     uncountable : function( word )
     {
-      this.uncountables.unshift( word );
+      uncountables.unshift( word );
     },
 
     resetInflections : function( )
     {
-      this.plurals      = [ ];
-      this.singulars    = [ ];
-      this.uncountables = [ ];
+      plurals      = [ ];
+      singulars    = [ ];
+      uncountables = [ ];
 
       this.plural( /$/,                         's'       );
       this.plural( /s$/,                        's'       );
