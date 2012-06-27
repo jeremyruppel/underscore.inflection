@@ -149,6 +149,11 @@ describe( 'underscore.inflector', function( )
     {
       expect( _.singularize( 'post' ) ).toEqual( 'post' );
     } );
+
+    it( 'should singularize a word that contains an irregular', function( )
+    {
+      expect( _.singularize( 'comments' ) ).toEqual( 'comment' );
+    } );
   } );
   
   describe( 'singular', function( )

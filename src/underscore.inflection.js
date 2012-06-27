@@ -87,8 +87,8 @@
 
     irregular : function( singular, plural )
     {
-      this.plural( singular, plural );
-      this.singular( plural, singular );
+      this.plural( '\\b' + singular + '\\b', plural );
+      this.singular( '\\b' + plural + '\\b', singular );
     },
 
     uncountable : function( word )
