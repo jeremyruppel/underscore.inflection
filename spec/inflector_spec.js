@@ -1,3 +1,11 @@
+describe( 'initial load', function( )
+{
+  it( 'should work already', function( )
+  {
+    expect( _.pluralize( 'word' )).toEqual( 'words' );
+  } );
+} );
+
 describe( 'underscore.inflector', function( )
 {  
   beforeEach( function( )
@@ -140,6 +148,11 @@ describe( 'underscore.inflector', function( )
     it( 'should return the same word if it cannot be singularized', function( )
     {
       expect( _.singularize( 'post' ) ).toEqual( 'post' );
+    } );
+
+    it( 'should singularize a word that contains an irregular', function( )
+    {
+      expect( _.singularize( 'comments' ) ).toEqual( 'comment' );
     } );
   } );
   
