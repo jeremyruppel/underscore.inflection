@@ -1,3 +1,11 @@
+describe( 'initial load', function( )
+{
+  it( 'should work already', function( )
+  {
+    expect( _.pluralize( 'word' )).toEqual( 'words' );
+  } );
+} );
+
 describe( 'underscore.inflector', function( )
 {  
   beforeEach( function( )
