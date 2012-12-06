@@ -33,9 +33,10 @@
     pluralize : function( word, count, includeNumber )
     {
       var result;
-      
+
       if( count !== undefined )
       {
+        count = Math.round(count);
         result = ( count === 1 ) ? this.singularize( word ) : this.pluralize( word );
         result = ( includeNumber ) ? [ count, result ].join( ' ' ) : result;
       }
@@ -56,7 +57,7 @@
         },
         this );
       }
-      
+
       return result;
     },
 
@@ -172,5 +173,5 @@
    * Underscore integration
    */
   _.mixin( inflector.resetInflections( ) );
-  
+
 } )( _ );
