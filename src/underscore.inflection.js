@@ -97,27 +97,27 @@
       uncountables.unshift( word );
     },
 
-    ordinalize : function( word )
+    ordinalize : function( number )
     {
-      if ( isNaN( word ) )
-        return word;
+      if ( isNaN( number ) )
+        return number;
 
-      word = word.toString();
-      var lastDigit = word.slice(-1);
-      var lastTwoDigits = word.slice(-2);
+      number = number.toString();
+      var lastDigit = number.slice(-1);
+      var lastTwoDigits = number.slice(-2);
 
       if ( lastTwoDigits === "11" || lastTwoDigits === "12" || lastTwoDigits === "13" )
-        return word + "th";
+        return number + "th";
 
       switch ( lastDigit ) {
         case "1":
-          return word + "st";
+          return number + "st";
         case "2":
-          return word + "nd";
+          return number + "nd";
         case "3":
-          return word + "rd";
+          return number + "rd";
         default:
-          return word + "th";
+          return number + "th";
       }
     },
 
