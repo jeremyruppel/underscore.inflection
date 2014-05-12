@@ -59,6 +59,18 @@ Optionally, you can pass `true` as a third parameter. If found, this will includ
 	// object-oriented style
 	_( 'word' ).gsub( /wo/, 'ne' ); // => 'nerd'
 
+### ordinalize
+
+**Signature:** `_.uncountable( number )`
+
+`ordinalize` adds an ordinal suffix to `number`.
+
+	_( 'word' ).ordinalize( 1 );    // => '1st'
+	_( 'word' ).ordinalize( "5" );  // => '5th'
+	_( 'word' ).ordinalize( 11 );   // => '11th'
+	_( 'word' ).ordinalize( 1033 ); // => '1033rd'
+	_( 'word' ).ordinalize( -15 );  // => '-15th'
+
 Configuring the Inflector
 -------------------------
 
@@ -123,19 +135,6 @@ Should you ever need to configure the Inflector beyond the defaults, use these m
 
 	// object-oriented style
 	_( 'equipment' ).uncountable( );
-
-### ordinalize
-
-**Signature:** `_.uncountable( number )`
-
-`ordinalize` adds an ordinal suffix to `number`.
-
-	_( 'word' ).ordinalize( 1 );    // => '1st'
-	_( 'word' ).ordinalize( "5" );  // => '5th'
-	_( 'word' ).ordinalize( 11 );   // => '11th'
-	_( 'word' ).ordinalize( 1033 ); // => '1033rd'
-	_( 'word' ).ordinalize( -15 );  // => '-15th'
-
 
 ### resetInflections
 
