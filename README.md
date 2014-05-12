@@ -20,7 +20,7 @@ The methods listed below are the ones you'll be using 99% of the time.
 
 	// functional style
 	_.pluralize( 'word' ); // => 'words'
-	
+
 	// object-oriented style
 	_( 'word' ).pluralize( ); // => 'words'
 
@@ -29,7 +29,7 @@ It also can accept a number as the second parameter. If a number is provided, it
 	_( 'word' ).pluralize( 0 ); // => 'words'
 	_( 'word' ).pluralize( 1 ); // => 'word'
 	_( 'word' ).pluralize( 1.5 ); // => 'words'
-	
+
 Optionally, you can pass `true` as a third parameter. If found, this will include the count with the output.
 
 	_( 'word' ).pluralize( 0, true ); // => '0 words'
@@ -43,10 +43,10 @@ Optionally, you can pass `true` as a third parameter. If found, this will includ
 
 	// functional style
 	_.singularize( 'words' ); // => 'word'
-	
+
 	// object-oriented style
 	_( 'words' ).singularize( ); // => 'word'
-	
+
 ### gsub
 
 **Signature:** `_.gsub( word, rule, replacement )`
@@ -55,7 +55,7 @@ Optionally, you can pass `true` as a third parameter. If found, this will includ
 
 	// functional style
 	_.gsub( 'word', /wo/, 'ne' ); // => 'nerd'
-	
+
 	// object-oriented style
 	_( 'word' ).gsub( /wo/, 'ne' ); // => 'nerd'
 
@@ -72,16 +72,16 @@ Should you ever need to configure the Inflector beyond the defaults, use these m
 
 	// functional style with explicit string
 	_.plural( 'axis', 'axes' );
-	
+
 	// object-oriented style with explicit string
 	_( 'axis' ).plural( 'axes' );
 
 	// functional style with regex
 	_.plural( /(ax)is$/i, '$1es' );
-	
+
 	// object-oriented style with regex
 	_( /(ax)is$/i ).plural( '$1es' );
-	
+
 ### singular
 
 **Signature:** `_.singular( rule, replacement )`
@@ -108,10 +108,10 @@ Should you ever need to configure the Inflector beyond the defaults, use these m
 
 	// functional style
 	_.irregular( 'haxor', 'hax0rs!' );
-	
+
 	// object-oriented style
 	_( 'haxor' ).irregular( 'hax0rs!' );
-	
+
 ### uncountable
 
 **Signature:** `_.uncountable( word )`
@@ -120,10 +120,23 @@ Should you ever need to configure the Inflector beyond the defaults, use these m
 
 	// functional style
 	_.uncountable( 'equipment' );
-	
+
 	// object-oriented style
 	_( 'equipment' ).uncountable( );
-	
+
+### ordinalize
+
+**Signature:** `_.uncountable( number )`
+
+`ordinalize` adds an ordinal suffix to `number.
+
+	_( 'word' ).ordinalize( 1 );    // => '1st'
+	_( 'word' ).ordinalize( "5" );  // => '5th'
+	_( 'word' ).ordinalize( 11 );   // => '11th'
+	_( 'word' ).ordinalize( 1033 ); // => '1033rd'
+	_( 'word' ).ordinalize( -15 );  // => '-15th'
+
+
 ### resetInflections
 
 **Signature:** `_.resetInflections( )`
