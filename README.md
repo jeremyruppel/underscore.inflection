@@ -128,7 +128,7 @@ Should you ever need to configure the Inflector beyond the defaults, use these m
 
 **Signature:** `_.uncountable( number )`
 
-`ordinalize` adds an ordinal suffix to `number.
+`ordinalize` adds an ordinal suffix to `number`.
 
 	_( 'word' ).ordinalize( 1 );    // => '1st'
 	_( 'word' ).ordinalize( "5" );  // => '5th'
