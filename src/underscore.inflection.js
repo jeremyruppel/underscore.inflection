@@ -97,6 +97,30 @@
       uncountables.unshift( word );
     },
 
+    ordinalize : function( word )
+    {
+      if ( isNaN( word ) )
+        return word;
+
+      word = word.toString();
+      var lastDigit = word.slice(-1);
+      var lastTwoDigits = word.slice(-2);
+
+      if ( lastTwoDigits === "11" || lastTwoDigits === "12" || lastTwoDigits === "13" )
+        return word + "th";
+
+      switch ( lastDigit ) {
+        case "1":
+          return word + "st";
+        case "2":
+          return word + "nd";
+        case "3":
+          return word + "rd";
+        default:
+          return word + "th";
+      }
+    },
+
     resetInflections : function( )
     {
       plurals      = [ ];
