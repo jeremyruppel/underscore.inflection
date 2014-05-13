@@ -232,6 +232,65 @@ describe( 'underscore.inflector', function( )
     } );
   } );
 
+  describe( 'ordinalize', function( )
+  {
+    it( 'should be defined', function( ) {
+      expect( _.ordinalize ).toBeDefined( );
+    } );
+
+    it( 'should return a stirng that is not a number or string', function( ) {
+      expect( _.ordinalize( 'hello' ) ).toEqual( 'hello' );
+    } );
+
+    it( 'should ordinalize a number',function( ) {
+      expect( _.ordinalize( 4 ) ).toEqual( '4th' );
+    } );
+
+    it( 'should ordinalize a number string', function( ) {
+      expect( _.ordinalize( '4' ) ).toEqual( '4th' );
+    } );
+
+    it( 'should ordinalize 0 to "0th"', function( ) {
+      expect( _.ordinalize( 0 ) ).toEqual( '0th' );
+    } );
+
+    it( 'should ordinalize 1 to "1st"', function( ) {
+      expect( _.ordinalize( 1 ) ).toEqual( '1st' );
+    } );
+
+    it( 'should ordinalize 2 to "2nd', function( ) {
+      expect( _.ordinalize( 2 ) ).toEqual( '2nd' );
+    } );
+
+    it( 'should ordinalize 3 to "3rd"', function( ) {
+      expect( _.ordinalize( 3 ) ).toEqual( '3rd' );
+    } );
+
+    it( 'should ordinalize 11 to "11th"', function( ) {
+      expect( _.ordinalize( 11 ) ).toEqual( '11th' );
+    });
+
+    it( 'should ordinalize 12 to "12th"', function( ) {
+      expect( _.ordinalize( 12 ) ).toEqual( '12th' );
+    } );
+
+    it( 'should ordinalize 13 to "13th"', function( ) {
+      expect( _.ordinalize( 13 ) ).toEqual( '13th' );
+    } );
+
+    it( 'should ordinalize 1003 to "1003rd"', function( ) {
+      expect( _.ordinalize( 1003 ) ).toEqual( '1003rd' );
+    } );
+
+    it( 'should ordinalize -11 to "-11th', function( ) {
+      expect( _.ordinalize( -11 ) ).toEqual( '-11th' );
+    } );
+
+    it( 'should ordinalize -11 to "-11th', function( ) {
+      expect( _.ordinalize( -1021 ) ).toEqual( '-1021st' );
+    } );
+  } );
+
   describe( 'resetInflections', function( )
   {
     it( 'should be defined', function( )
