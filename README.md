@@ -65,11 +65,21 @@ Optionally, you can pass `true` as a third parameter. If found, this will includ
 
 `ordinalize` adds an ordinal suffix to `number`.
 
-	_( 'word' ).ordinalize( 1 );    // => '1st'
-	_( 'word' ).ordinalize( "5" );  // => '5th'
-	_( 'word' ).ordinalize( 11 );   // => '11th'
-	_( 'word' ).ordinalize( 1033 ); // => '1033rd'
-	_( 'word' ).ordinalize( -15 );  // => '-15th'
+	_.ordinalize( 1 );    // => '1st'
+	_.ordinalize( "5" );  // => '5th'
+	_.ordinalize( 11 );   // => '11th'
+	_.ordinalize( 1033 ); // => '1033rd'
+	_.ordinalize( -15 );  // => '-15th'
+
+### titleize
+
+**Signature:** `_.titleize( words )`
+
+`titleize` capitalizes the first letter of each word in the string `words`. It preserves the existing whitespace.
+
+	_.titleize( 'banana' );               // => 'Banana'
+	_.titleize( 'banana potato fork' );   // => 'Banana Potato Fork'
+	_.titleize( `banana  potato\tfork` ); // => 'Banana  Potato\tFork'
 
 Configuring the Inflector
 -------------------------
