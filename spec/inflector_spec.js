@@ -291,6 +291,37 @@ describe( 'underscore.inflector', function( )
     } );
   } );
 
+  describe( 'titleize', function( ) {
+
+    it( 'should be defined', function( ) {
+      expect( _.titleize ).toBeDefined( );
+    } );
+
+    it( 'should return non-strings', function( ) {
+      expect( _.titleize(5) ).toEqual(5);
+    } );
+
+    it ( 'should return the empty string when provided with the empty string', function( ) {
+      expect( _.titleize('') ).toEqual('');
+    } );
+
+    it( 'should titlize a word', function( ) {
+      expect( _.titleize( 'banana' ) ).toEqual( 'Banana' );
+    } );
+
+    it( 'should titleize multiple words', function( ) {
+      expect( _.titleize( 'banana potato fork' ) ).toEqual( 'Banana Potato Fork' );
+    } );
+
+    it( 'should not change the whitespace', function( ) {
+      expect( _.titleize( '\tbanana\npotato  fork\r\n' ) ).toEqual( '\tBanana\nPotato  Fork\r\n' );
+    } );
+
+    it( 'should not alter words that begin with non-alphabetic characters', function( ) {
+      expect( _.titleize( '123banana' ) ).toEqual( '123banana' );
+    } );
+  } );
+
   describe( 'resetInflections', function( )
   {
     it( 'should be defined', function( )

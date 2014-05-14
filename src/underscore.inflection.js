@@ -121,6 +121,16 @@
       }
     },
 
+    titleize : function( words )
+    {
+      if ( typeof words !== "string")
+        return words;
+
+      return words.replace( /\S+/g, function( word ) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      } );
+    },
+
     resetInflections : function( )
     {
       plurals      = [ ];
