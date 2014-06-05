@@ -148,7 +148,7 @@
       this.plural( /([ti])um$/,                 '$1a'     );
       this.plural( /([ti])a$/,                  '$1a'     );
       this.plural( /sis$/,                      'ses'     );
-      this.plural( /(?:([^f])fe|([lr])f)$/,     '$1$2ves' );
+      this.plural( /(?:([^f])fe|([lr])?f)$/,     '$1$2ves' );
       this.plural( /(hive)$/,                   '$1s'     );
       this.plural( /([^aeiouy]|qu)y$/,          '$1ies'   );
       this.plural( /(x|ch|ss|sh)$/,             '$1es'    );
