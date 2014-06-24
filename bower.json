@@ -1,0 +1,11 @@
+{
+  "name": "underscore.inflection",
+  "version": "1.0.0",
+  "dependencies": {
+    "underscore": "~1.6.0"
+  },
+  "main" : "src/underscore.inflection.js",
+  "ignore" : [
+    "spec"
+  ]
+}
