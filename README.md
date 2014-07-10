@@ -111,16 +111,16 @@ Should you ever need to configure the Inflector beyond the defaults, use these m
 `singular` creates a new singularization rule for the inflector. `rule` can be either a string or a regex.
 
 	// functional style with explicit string
-	_.plural( 'data', 'datum' );
+	_.singular( 'data', 'datum' );
 
 	// object-oriented style with explicit string
-	_( 'data' ).plural( 'datum' );
+	_( 'data' ).singular( 'datum' );
 
 	// functional style with regex
-	_.plural( /(t)a$/i, '$1um' );
+	_.singular( /(t)a$/i, '$1um' );
 
 	// object-oriented style with regex
-	_( /(t)a$/i ).plural( '$1um' );
+	_( /(t)a$/i ).singular( '$1um' );
 
 ### irregular
 
