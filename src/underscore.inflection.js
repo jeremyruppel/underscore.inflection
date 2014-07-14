@@ -36,7 +36,7 @@
 
       if( count !== undefined )
       {
-        count = Math.round(count);
+        count = parseFloat(count);
         result = ( count === 1 ) ? this.singularize( word ) : this.pluralize( word );
         result = ( includeNumber ) ? [ count, result ].join( ' ' ) : result;
       }
