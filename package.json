@@ -1,0 +1,32 @@
+{
+  "name": "underscore.inflection",
+  "version": "1.0.0",
+  "description": "ActiveSupport::Inflector, for underscore!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeremyruppel/underscore.inflection.git"
+  },
+  "keywords": [
+    "underscore",
+    "inflection",
+    "inflector",
+    "activesupport",
+    "plural",
+    "pluralize"
+  ],
+  "author": "Jeremy Ruppel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremyruppel/underscore.inflection/issues"
+  },
+  "homepage": "https://github.com/jeremyruppel/underscore.inflection",
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "underscore": "~1.6.0",
+    "chai": "~1.9.1"
+  }
+}
