@@ -88,7 +88,7 @@ describe( 'underscore.inflector', function( )
 
       it( 'should pluralize the word if non-1 float', function( )
       {
-        expect( _.pluralize( 'post', '1.3' ) ).toEqual( 'posts' );
+        expect( _.pluralize( 'post', 1.5 ) ).toEqual( 'posts' );
       } );
 
       it( 'should not pluralize the word if 1', function( )
