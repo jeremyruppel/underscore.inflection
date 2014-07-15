@@ -113,6 +113,12 @@ describe( 'underscore.inflector', function( )
           expect( _.pluralize( 'post', 0, true ) ).toEqual( '0 posts' );
         } );
 
+        it( 'should include the word with non-1 float', function( )
+        {
+          expect( _.pluralize( 'post', '1.3', true ) ).toEqual( '1.3 posts' );
+        } );
+
+
         it( 'should include the word with the singular', function( )
         {
           expect( _.pluralize( 'post', 1, true ) ).toEqual( '1 post' );
