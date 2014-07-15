@@ -1,0 +1,14 @@
+{
+    "preset": "google",
+    "requireParenthesesAroundIIFE": true,
+    "requireSpaceAfterLineComment": true,
+    "maximumLineLength": 120,
+    "validateLineBreaks": "LF",
+    "validateIndentation": 2,
+    "disallowKeywords": [
+      "with"
+    ],
+    "excludeFiles": [
+      "node_modules/**"
+    ]
+}

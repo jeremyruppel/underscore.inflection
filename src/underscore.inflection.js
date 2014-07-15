@@ -34,7 +34,7 @@
     {
       var result;
 
-      if( count !== undefined )
+      if ( count !== undefined )
       {
         count = parseFloat(count);
         result = ( count === 1 ) ? this.singularize( word ) : this.pluralize( word );
@@ -42,7 +42,7 @@
       }
       else
       {
-        if( _( uncountables ).include( word ) )
+        if ( _( uncountables ).include( word ) )
         {
           return word;
         }
@@ -68,7 +68,7 @@
 
     singularize : function( word )
     {
-      if( _( uncountables ).include( word ) )
+      if ( _( uncountables ).include( word ) )
       {
         return word;
       }
@@ -99,32 +99,35 @@
 
     ordinalize : function( number )
     {
-      if ( isNaN( number ) )
+      if ( isNaN( number ) ) {
         return number;
+      }
 
       number = number.toString();
       var lastDigit = number.slice(-1);
       var lastTwoDigits = number.slice(-2);
 
-      if ( lastTwoDigits === "11" || lastTwoDigits === "12" || lastTwoDigits === "13" )
-        return number + "th";
+      if ( lastTwoDigits === '11' || lastTwoDigits === '12' || lastTwoDigits === '13' ) {
+        return number + 'th';
+      }
 
       switch ( lastDigit ) {
-        case "1":
-          return number + "st";
-        case "2":
-          return number + "nd";
-        case "3":
-          return number + "rd";
+        case '1':
+          return number + 'st';
+        case '2':
+          return number + 'nd';
+        case '3':
+          return number + 'rd';
         default:
-          return number + "th";
+          return number + 'th';
       }
     },
 
     titleize : function( words )
     {
-      if ( typeof words !== "string")
+      if ( typeof words !== 'string' ) {
         return words;
+      }
 
       return words.replace( /\S+/g, function( word ) {
         return word.charAt(0).toUpperCase() + word.slice(1);
@@ -192,11 +195,15 @@
       this.irregular( 'move',   'moves'    );
       this.irregular( 'cow',    'kine'     );
 
-      _( 'equipment information rice money species series fish sheep jeans'.split( /\s+/ ) ).each( function( word )
-      {
-        this.uncountable( word );
-      },
-      this );
+      this.uncountable('equipment');
+      this.uncountable('information');
+      this.uncountable('rice');
+      this.uncountable('money');
+      this.uncountable('species');
+      this.uncountable('series');
+      this.uncountable('fish');
+      this.uncountable('sheep');
+      this.uncountable('jeans');
 
       return this;
     }
