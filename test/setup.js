@@ -12,3 +12,10 @@ global.expect = require('chai').expect;
  * Require the subject under test
  */
 require('../src/underscore.inflection');
+
+/**
+ * Reset inflections befor each test
+ */
+beforeEach(function() {
+  _.resetInflections();
+});
