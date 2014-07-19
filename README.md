@@ -154,8 +154,7 @@ Should you ever need to configure the Inflector beyond the defaults, use these m
 
 `resetInflections` resets the inflector's rules to their initial state, clearing out any custom rules that have been added.
 
-Thanks to...
-------------
+## Thanks to...
 
 The [Rails][rails] team for [ActiveSupport][activesupport]
 
@@ -169,6 +168,22 @@ These other Inflector implementations:
 
 Though no code was taken directly from them, they deserve plenty of props for doing it before me. If underscore isn't your thing, check them out!
 
+## Contributors
+
+```
+    29	Jeremy Ruppel
+     7	Landon Schropp
+     2	Johnathon Sanders
+     2	Seggy Umboh
+     1	Dayton Nolan
+     1	Shane Riley
+     1	trevor
+```
+
+## License
+
+[MIT License][LICENSE]
+
 [npm]: http://badge.fury.io/js/underscore.inflection
 [npm-badge]: https://badge.fury.io/js/underscore.inflection.svg
 [travis-ci]: https://travis-ci.org/jeremyruppel/underscore.inflection
@@ -179,3 +194,4 @@ Though no code was taken directly from them, they deserve plenty of props for do
 [activesupport]: https://github.com/rails/rails/tree/master/activesupport
 [underscore]: http://documentcloud.github.com/underscore/
 [documentcloud]: http://www.documentcloud.org/home
+[LICENSE]: https://github.com/jeremyruppel/underscore.inflection/blob/master/LICENSE

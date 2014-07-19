@@ -31,14 +31,15 @@
   },
   "homepage": "https://github.com/jeremyruppel/underscore.inflection",
   "devDependencies": {
-    "mocha": "~1.20.1",
-    "underscore": "~1.6.0",
     "chai": "~1.9.1",
-    "gulp": "~3.8.6",
-    "gulp-jscs": "~0.6.0",
     "coveralls": "~2.11.1",
-    "mocha-lcov-reporter": "0.0.1",
+    "gulp": "~3.8.6",
+    "gulp-contribs": "0.0.2",
+    "gulp-jscoverage": "~0.1.0",
+    "gulp-jscs": "~0.6.0",
     "jscoverage": "~0.5.5",
-    "gulp-jscoverage": "~0.1.0"
+    "mocha": "~1.20.1",
+    "mocha-lcov-reporter": "0.0.1",
+    "underscore": "~1.6.0"
   }
 }
