@@ -1,5 +1,6 @@
 ## underscore.inflection
 
+> [![NPM version][npm-badge]][npm]
 > [![Build Status][travis-badge]][travis-ci]
 > [![Coverage Status][coveralls-badge]][coveralls]
 
@@ -168,6 +169,8 @@ These other Inflector implementations:
 
 Though no code was taken directly from them, they deserve plenty of props for doing it before me. If underscore isn't your thing, check them out!
 
+[npm]: http://badge.fury.io/js/underscore.inflection
+[npm-badge]: https://badge.fury.io/js/underscore.inflection.svg
 [travis-ci]: https://travis-ci.org/jeremyruppel/underscore.inflection
 [travis-badge]: https://travis-ci.org/jeremyruppel/underscore.inflection.svg?branch=master
 [coveralls]: https://coveralls.io/r/jeremyruppel/underscore.inflection?branch=master
