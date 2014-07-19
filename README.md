@@ -1,6 +1,7 @@
 ## underscore.inflection
 
-> [![underscore.inflection][travis-badge]][travis-ci]
+> [![Build Status][travis-badge]][travis-ci]
+> [![Coverage Status][coveralls-badge]][coveralls]
 
 **Another javascript inflector?!**
 
@@ -169,6 +170,8 @@ Though no code was taken directly from them, they deserve plenty of props for do
 
 [travis-ci]: https://travis-ci.org/jeremyruppel/underscore.inflection
 [travis-badge]: https://travis-ci.org/jeremyruppel/underscore.inflection.svg?branch=master
+[coveralls]: https://coveralls.io/r/jeremyruppel/underscore.inflection?branch=master
+[coveralls-badge]: https://img.shields.io/coveralls/jeremyruppel/underscore.inflection.svg
 [rails]: https://github.com/rails/rails
 [activesupport]: https://github.com/rails/rails/tree/master/activesupport
 [underscore]: http://documentcloud.github.com/underscore/
