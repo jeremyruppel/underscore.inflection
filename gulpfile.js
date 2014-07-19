@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var jscs = require('gulp-jscs');
 var jscov = require('gulp-jscoverage');
+var symlink = require('gulp-symlink');
 var contribs = require('gulp-contribs');
 
 gulp.task('jscs', function() {
@@ -20,4 +21,11 @@ gulp.task('contribs', function() {
   gulp.src('README.md')
     .pipe(contribs())
     .pipe(gulp.dest('./'));
+});
+
+gulp.task('docs', ['contribs']);
+
+gulp.task('install', function() {
+  gulp.src('etc/hooks/*')
+    .pipe(symlink('.git/hooks'));
 });

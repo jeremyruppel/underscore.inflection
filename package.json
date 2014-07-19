@@ -9,8 +9,10 @@
   "scripts": {
     "test": "mocha",
     "coverage": "JSCOV=1 mocha -R mocha-lcov-reporter | coveralls",
+    "jscov": "gulp jscov",
     "jscs": "gulp jscs",
-    "jscov": "gulp jscov"
+    "docs": "gulp docs",
+    "postinstall": "gulp install"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
     "gulp-contribs": "0.0.2",
     "gulp-jscoverage": "~0.1.0",
     "gulp-jscs": "~0.6.0",
+    "gulp-symlink": "^1.1.0",
     "jscoverage": "~0.5.5",
     "mocha": "~1.20.1",
     "mocha-lcov-reporter": "0.0.1",

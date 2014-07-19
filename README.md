@@ -171,7 +171,7 @@ Though no code was taken directly from them, they deserve plenty of props for do
 ## Contributors
 
 ```
-    29	Jeremy Ruppel
+    30	Jeremy Ruppel
      7	Landon Schropp
      2	Johnathon Sanders
      2	Seggy Umboh
