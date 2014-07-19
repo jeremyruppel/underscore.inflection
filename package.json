@@ -2,13 +2,15 @@
   "name": "underscore.inflection",
   "version": "1.0.0",
   "description": "ActiveSupport::Inflector, for underscore!",
-  "main": "src/underscore.inflection.js",
+  "main": "index.js",
   "engines": {
     "node": ">=0.10.0 <0.12"
   },
   "scripts": {
     "test": "mocha",
-    "lint": "gulp lint"
+    "coverage": "JSCOV=1 mocha -R mocha-lcov-reporter | coveralls",
+    "jscs": "gulp jscs",
+    "jscov": "gulp jscov"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,8 @@
     "gulp": "~3.8.6",
     "gulp-jscs": "~0.6.0",
     "coveralls": "~2.11.1",
-    "mocha-lcov-reporter": "0.0.1"
+    "mocha-lcov-reporter": "0.0.1",
+    "jscoverage": "~0.5.5",
+    "gulp-jscoverage": "~0.1.0"
   }
 }
