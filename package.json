@@ -11,8 +11,7 @@
     "coverage": "JSCOV=1 mocha -R mocha-lcov-reporter | coveralls",
     "jscov": "gulp jscov",
     "jscs": "gulp jscs",
-    "docs": "gulp docs",
-    "postinstall": "gulp install"
+    "docs": "gulp docs"
   },
   "repository": {
     "type": "git",
