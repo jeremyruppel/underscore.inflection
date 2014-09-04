@@ -24,8 +24,3 @@ gulp.task('contribs', function() {
 });
 
 gulp.task('docs', ['contribs']);
-
-gulp.task('install', function() {
-  gulp.src('etc/hooks/*')
-    .pipe(symlink('.git/hooks'));
-});
