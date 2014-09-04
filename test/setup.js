@@ -11,7 +11,7 @@ global.expect = require('chai').expect;
 /**
  * Require the subject under test
  */
-require('../' + process.env['npm_package_main']);
+require('..');
 
 /**
  * Reset inflections befor each test
