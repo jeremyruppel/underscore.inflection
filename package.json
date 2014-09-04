@@ -40,7 +40,7 @@
     "gulp-jscs": "~0.6.0",
     "gulp-symlink": "^1.1.0",
     "jscoverage": "~0.5.5",
-    "mocha": "~1.20.1",
+    "mocha": "^1.21.4",
     "mocha-lcov-reporter": "0.0.1",
     "underscore": "~1.6.0"
   }
