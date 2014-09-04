@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "mocha",
+    "browser": "open test/index.html",
     "coverage": "JSCOV=1 mocha -R mocha-lcov-reporter | coveralls",
     "jscov": "gulp jscov",
     "jscs": "gulp jscs",
