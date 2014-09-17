@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var jscs = require('gulp-jscs');
 var jscov = require('gulp-jscoverage');
-var symlink = require('gulp-symlink');
 var contribs = require('gulp-contribs');
 
 gulp.task('jscs', function() {
