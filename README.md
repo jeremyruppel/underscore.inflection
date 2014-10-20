@@ -64,7 +64,7 @@ Optionally, you can pass `true` as a third parameter. If found, this will includ
 
 ### ordinalize
 
-**Signature:** `_.uncountable(number)`
+**Signature:** `_.ordinalize(number)`
 
 `ordinalize` adds an ordinal suffix to `number`.
 
