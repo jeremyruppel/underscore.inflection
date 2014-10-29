@@ -3,6 +3,7 @@
   "version": "1.1.2",
   "description": "ActiveSupport::Inflector, for underscore!",
   "main": "index.js",
+  "browser": "lib/underscore.inflection.js",
   "engines": {
     "node": ">=0.10.0 <0.12"
   },
@@ -43,5 +44,6 @@
     "mocha": "^1.21.4",
     "mocha-lcov-reporter": "0.0.1",
     "underscore": "~1.7.0"
-  }
+  },
+  "dependencies": {}
 }
