@@ -6,6 +6,7 @@
   },
   "main" : "lib/underscore.inflection.js",
   "ignore" : [
-    "spec"
+    "lib-cov",
+    "test"
   ]
 }
