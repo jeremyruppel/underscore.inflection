@@ -2,7 +2,7 @@
   "name": "underscore.inflection",
   "version": "1.2.0",
   "dependencies": {
-    "underscore": "~1.7.0"
+    "underscore": "~1.8.3"
   },
   "main" : "lib/underscore.inflection.js",
   "ignore" : [
