@@ -1,3 +1,7 @@
+excludeInFolderSearch = "{$excludeInFolderSearch,node_modules}"
+
+excludeInFileChooser = "{$excludeInFileChooser,node_modules}"
+
 # Settings
 softWrap = false
 softTabs = true
