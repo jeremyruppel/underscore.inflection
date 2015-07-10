@@ -171,12 +171,13 @@ Though no code was taken directly from them, they deserve plenty of props for do
 ## Contributors
 
 ```
-    52	Jeremy Ruppel
+    54	Jeremy Ruppel
      7	Landon Schropp
-     2	Seggy Umboh
      2	Johnathon Sanders
+     2	Seggy Umboh
      1	Shane Riley
      1	bramski
+     1	maratfakhreev
      1	Dayton Nolan
      1	trevor
      1	Joseph Spens
