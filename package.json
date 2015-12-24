@@ -5,7 +5,7 @@
   "main": "index.js",
   "browser": "lib/underscore.inflection.js",
   "engines": {
-    "node": ">=0.10.0 <0.12"
+    "node": ">0.10.0"
   },
   "scripts": {
     "test": "mocha",
