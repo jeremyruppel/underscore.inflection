@@ -1,6 +1,6 @@
 {
   "name": "underscore.inflection",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "ActiveSupport::Inflector, for underscore!",
   "main": "index.js",
   "browser": "lib/underscore.inflection.js",
