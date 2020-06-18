@@ -43,7 +43,7 @@
     "jscoverage": "~0.5.9",
     "mocha": "~2.2.5",
     "mocha-lcov-reporter": "~0.0.2",
-    "mversion": "^1.10.1",
+    "mversion": "^2.0.0",
     "underscore": "^1.9.1"
   },
   "dependencies": {}
