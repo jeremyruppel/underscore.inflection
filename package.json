@@ -36,12 +36,12 @@
   "devDependencies": {
     "chai": "~2.3.0",
     "coveralls": "~2.11.2",
-    "gulp": "~3.8.11",
+    "gulp": "~4.0.2",
     "gulp-contribs": "~0.0.2",
     "gulp-jscoverage": "~0.1.0",
-    "gulp-jscs": "~1.6.0",
+    "gulp-jscs": "~4.1.0",
     "jscoverage": "~0.5.9",
-    "mocha": "~2.2.5",
+    "mocha": "~10.1.0",
     "mocha-lcov-reporter": "~0.0.2",
     "mversion": "^1.10.1",
     "underscore": "^1.9.1"
